@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "start": "node main.js"
+  },
   "keywords": [],
   "author": "auieo",
   "license": "MIT",
