@@ -1,0 +1,16 @@
+{
+  "name": "auieoyt_web",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "auieo",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.2"
+  }
+}
