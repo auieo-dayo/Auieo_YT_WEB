@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ</title>
+</head>
+<body>
+  <button id="back">戻る</button>
+  <ul>
+    <li>06/15 アカウントを開設しました！</li>
+  </ul>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #back {
+        position: sticky;
+        top: 0px;
+    }
+  </style>
+  <script>
+    function isInIframeSafe() {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+if (isInIframeSafe()) {
+    document.getElementById("back").style.display = "none"
+} else {
+    document.body.style.backgroundColor = "#858585"
+}
+    document.getElementById("back").addEventListener("click",(ev)=>{
+        const element = ev.target
+        const a = document.createElement("a")
+        a.href = "/"
+        a.click()
+    })
+  </script>
+</body>
+</html>
